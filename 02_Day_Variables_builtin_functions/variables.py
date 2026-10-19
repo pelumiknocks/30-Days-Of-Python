@@ -1,4 +1,4 @@
-
+"""
 # Variables in Python
 
 first_name = 'Asabeneh'
@@ -38,3 +38,33 @@ print('Last name: ', last_name)
 print('Country: ', country)
 print('Age: ', age)
 print('Married: ', is_married)
+"""
+
+print("Day 2: 30 Days of python programming")
+first_name= "Pelumi"
+last_name ="Adewale"
+full_name = first_name +" " + last_name
+age = 19
+year = 2007
+is_married = False
+is_true = True
+
+ranking, level, grade = 30, 300, "first class"
+
+print(ranking)
+print(type(first_name))
+print(len(first_name))
+print(len(last_name))
+
+if len(first_name)< len(last_name):
+    print("Last name is longer than first name")
+elif len(first_name) == len(last_name):
+     print("Both have equal length")
+else:
+    print("First name is longer")
+
+num_one, num_two = 2, 1
+total = num_one + num_two
+print("total is: ", total)
+modulus =   num_two % num_one
+print(modulus)
