@@ -67,4 +67,81 @@ num_one, num_two = 2, 1
 total = num_one + num_two
 print("total is: ", total)
 modulus =   num_two % num_one
-print(modulus)
+print(modulus) 
+
+num_one = float(input("enter first number: "))
+num_two = float(input("enter second number: "))
+
+print("What operation do you want to perform: ")
+choice = input("/, +, *, %: ")
+if choice == "/":
+    print(num_one / num_two)
+elif choice == "*":
+    print(num_one * num_two)
+elif choice == "+":
+    print(num_one + num_two)
+elif choice == "%":
+    print(num_one % num_two)
+else: 
+    print("Invalid operation") 
+    """
+
+while True:
+    try:
+        num_one = float(input("Enter first number: "))
+        num_two = float(input("Enter second number: "))
+        break
+    except ValueError:
+        print("Please type a number")
+
+while True:
+    print("What operation do you want to perform?")
+    choice = input("/, +, -, *, %: ")
+    if choice in ["/", "+", "-", "*", "%"]:
+        break
+    print("Invalid operation, try again")
+
+if choice == "/":
+    if num_two == 0:
+        print("You cannot divide by zero")
+    else:
+        print(num_one / num_two)
+elif choice == "*":
+    print(num_one * num_two)
+elif choice == "+":
+    print(num_one + num_two)
+elif choice == "-":
+    print(num_one - num_two)
+elif choice == "%":
+    if num_two == 0:
+        print("You cannot divide by zero")
+    else:
+        print(num_one % num_two)
+
+"""
+pi=float(3.14)
+radius = float(input("Enter your preffered radius: "))
+
+area = pi*radius**2
+circumference = 2*pi*radius
+
+choice= input("What do you want to calculate(area or circumference): ")
+if choice == "area":
+    print(area)
+elif choice == "circumference":
+    print(circumference)
+else:
+    print("Invalid")
+
+
+length=len("python")
+float_change = float(length)
+to_str = str(float_change)
+print(type(to_str))
+
+years = float(input("number of years you have lived: "))
+seconds_lived = years*365*24*60*60
+print("You have lived for: ", float(seconds_lived))
+
+for n in range(1, 6):
+    print(n, 1, n, n ** 2, n ** 3)
